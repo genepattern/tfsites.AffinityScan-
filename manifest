@@ -1,0 +1,137 @@
+#tfsites.IntegrateGenomeAnnotations
+#Mon Aug 21 21:11:17 UTC 2023
+JVMLevel=
+LSID=
+author=
+commandLine=python /build/tfsites-webportal/06-affinityScan/06-affinityScan.py -p <pbm.data> -o <out.filename> -H <header.sequence.present> -f <column.forward> -m <column.MFI> -s <sequence> -r <plot.resolution> -z <zoom>       
+cpuType=any
+description=tfsites.AffinityScan returns a distribution of the MFI signal across a sequence.
+documentationUrl=https://genepattern.github.io/tfsites.affinityScan/v1/
+fileFormat=
+job.cpuCount=
+job.docker.image=genepattern/tfsites\:0.4
+job.memory=
+job.walltime=
+language=any
+name=tfsites.AffinityScan
+os=any
+p1_MODE=IN
+p1_TYPE=FILE
+p1_default_value=
+p1_description=File containing raw PBM data.
+p1_fileFormat=.pbm
+p1_flag=
+p1_name=pbm.data
+p1_numValues=1..1
+p1_optional=
+p1_prefix=
+p1_prefix_when_specified=
+p1_type=java.io.File
+p1_value=
+
+p2_MODE=
+p2_TYPE=TEXT
+p2_default_value=FALSE
+p2_description=TRUE/FALSE, Is there a header sequence in the raw PBM file?
+p2_fileFormat=
+p2_flag=
+p2_name=header.sequence.present
+p2_numValues=1..1
+p2_optional=
+p2_prefix=
+p2_prefix_when_specified=
+p2_type=java.lang.String
+p2_value=FALSE\=FALSE;TRUE\=TRUE
+
+p3_MODE=
+p3_TYPE=TEXT
+p3_default_value=<pbm.data_basename>_enhancer_signa_lineplot.png
+p3_description=Out file name for the line plot.
+p3_fileFormat=
+p3_flag=
+p3_name=out.filename
+p3_numValues=0..1
+p3_optional=
+p3_prefix=
+p3_prefix_when_specified=
+p3_type=java.lang.String
+p3_value=
+
+p4_MODE=
+p4_TYPE=TEXT
+p4_default_value=1
+p4_description=Column of the forward DNA sequence in the pbm file (1-indexed).
+p4_fileFormat=.bed
+p4_flag=
+p4_name=column.forward
+p4_numValues=1..1
+p4_optional=on
+p4_prefix=
+p4_prefix_when_specified=
+p4_type=java.lang.String
+p4_value=
+
+p5_MODE=
+p5_TYPE=TEXT
+p5_default_value=4
+p5_description=Column of the MFI in the pbm file (1-indexed).
+p5_fileFormat=
+p5_flag=
+p5_name=column.MFI
+p5_numValues=1..1
+p5_optional=
+p5_prefix=
+p5_prefix_when_specified=
+p5_type=java.lang.String
+p5_value=
+
+p6_MODE=
+p6_TYPE=TEXT
+p6_default_value=AACTTTAATGCCTATGTTTGATTTGAAGTCATAGCATAAAAGGTAACATAAGCAACATCCTGACCAATTATCCAAACCATCCAGACATCCCTGAATGGCCAGAGCGTAGCACACGGTCTGTAGGATTAAGAGGTTAACTCCTATAACTTCAAACAAAGTGCCTGATAATAAAAGCAAAAAGTACAAAATTTTAGGTAACTTCCTTTCTTAATTAATTGGACTGACCAGGTGGAAGCGAAGAGTTCTGTGCTGGTGCTTGGAATGTCTATAAAGCTGAGCAACATGACAGCACAATAGAGGAGGAACAAAGATTTTTTTAATATGTTTCTATCCTGTGTCACAGTTTGAAATTGTCCTGGTTTATGTCCCTTTTGGCAAACTTACATAAAAGTGACCTTGTACTGTATTTTATGACCAGATGACTTTTTCCCCCCAGTGGCTAATTTGTATCAGGCCTCCATCTTAAAGAGACACAGAGTGAGTAGGAAGTCCAGCCTCTGTCTCCACGAGCTTTCATTGCATTCTTTCATTATTTTTGCTCGTTTTTTGCCACTGATGATCCATAAATTGTTGGAAATGAGTGATTAAGGAAGTGCTGCTTAGTGTTAGTGGCACATGCGCATATTTGGCCTGGTTCTGGTGGGTGAGAGGAAATCACAGACAAAAGGGAAGCCCCTGCTGGGAACCCTGCAAGGAAATTTAACTTGGGTCATGTTTTGATCTTAGTGTTTATTACAGAAAATGAAGCCATATCTCACTAACTATTGTTACGTGTTAATTTGATTTTCC
+p6_description=Sequence to be scanned.
+p6_fileFormat=
+p6_flag=
+p6_name=sequence
+p6_numValues=1..1
+p6_optional=
+p6_prefix=
+p6_prefix_when_specified=
+p6_type=java.lang.String
+p6_value=
+
+p7_MODE=
+p7_TYPE=TEXT
+p7_default_value=150
+p7_description=Plot resolution.
+p7_fileFormat=
+p7_flag=
+p7_name=plot.resolution
+p7_numValues=1..1
+p7_optional=
+p7_prefix=
+p7_prefix_when_specified=
+p7_type=java.lang.String
+p7_value=
+
+p8_MODE=
+p8_TYPE=TEXT
+p8_default_value=1,200
+p8_description=Zoom into the plot by the number of base pairs.
+p8_fileFormat=
+p8_flag=
+p8_name=zoom
+p8_numValues=1..1
+p8_optional=
+p8_prefix=
+p8_prefix_when_specified=
+p8_type=java.lang.String
+p8_value=
+
+
+privacy=public
+quality=development
+src.repo=
+taskDoc=
+taskType=Transciption factor analysis
+userid=ted
+version=Draft initial release
