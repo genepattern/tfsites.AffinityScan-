@@ -62,7 +62,7 @@ TBD
   
 ## Example Data
 
-[Example input data is available on github](https://github.com/genepattern/tfsites.annotateTfSites/data)
+Example input data is available on github at [https://github.com/genepattern/tfsites.AffinityScan/tree/develop/gpunit/data](https://github.com/genepattern/tfsites.AffinityScan/tree/develop/gpunit/data)
     
 ## References
 
