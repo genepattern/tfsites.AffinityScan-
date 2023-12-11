@@ -56,6 +56,8 @@ TBD
 ## Output Files
 
   1.line plot: <output filename>.png.  [ describe the plot contennts here ]
+  
+  <img src="./06-output_zrs-enhancer-signal.png"/>
     
   
 ## Example Data
