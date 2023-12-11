@@ -2,11 +2,11 @@
 #Mon Aug 21 21:11:17 UTC 2023
 JVMLevel=
 LSID=
-author=
+author=Joe Solvason (solvason@eng.ucsd.edu)
 commandLine=python /build/tfsites-webportal/06-affinityScan/06-affinityScan.py -p <pbm.data> -o <out.filename> -H <header.sequence.present> -f <column.forward> -m <column.MFI> -s <sequence> -r <plot.resolution> -z <zoom>       
 cpuType=any
 description=tfsites.AffinityScan returns a distribution of the MFI signal across a sequence.
-documentationUrl=https://genepattern.github.io/tfsites.affinityScan/v1/
+documentationUrl=https://genepattern.github.io/tfsites.AffinityScan/v1/
 fileFormat=
 job.cpuCount=
 job.docker.image=genepattern/tfsites\:0.4

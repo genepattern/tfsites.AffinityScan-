@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Inputs and Outputs",
+        "description": "",
+        "hidden": false,
+        "parameters": [
+            "pbm.data",
+            "out.filename",
+            "header.sequence.present",
+	    "column.forward",
+            "column.MFI",
+	    "sequence"
+        ]
+    },
+{
+        "name": "Plotting Parameters",
+        "description": "",
+        "hidden": false,
+        "parameters": [
+            "zoom",
+            "plot.resolution",
+        ]
+    }
+
+]
