@@ -65,25 +65,15 @@ The raw PBM dataset for a transcription factor is downloaded from uniPROBE. We i
        
 ## Output Files
 
-1. Normalized PBM data (.tsv)
-   - Columns
-       - `Seq:` the sequence of every possible k-mer
-       - `Rel_aff:` the relative affinity of the k-mer normalized to the max IUPAC k-mer
+1. Line Graph of MFI Across a Sequence (.png)
 
-2. Histograms of Relative Affinities (.png) 
-    - Histogram plots
-        - All relative affinity values
-        - Affinity values for the sequences that follow the IUPAC minimal binding site
-        - Affinity values for the sequences that don't follow the IUPAC minimal binding site
-
+   <img src="./03-output_zrs-enhancer-signal.png"/> 
     
   
 ## Example Data
 
 Example input data is available on github at [https://github.com/genepattern/tfsites.AffinityScan/tree/develop/gpunit/data](https://github.com/genepattern/tfsites.AffinityScan/tree/develop/gpunit/data)
     
-## References
-
     
 ## Version Comments
 
