@@ -32,13 +32,13 @@ The raw PBM dataset for a transcription factor is downloaded from uniPROBE. We i
  
 ### Other Parameters:
 
-- <span style="color: red;">*</span> **Header Present (boolean)**
+- <span style="color: red;">*</span>**Header Present (boolean)**
     - If `True`, a header exists in the input PBM data file. If `False`, no header exists.
-- <span style="color: red;">*</span> **Column Index of DNA K-mers (integer)**
+- <span style="color: red;">*</span>**Column Index of DNA K-mers (integer)**
     - Number of the column containing the forward DNA sequence in the input PBM file. (1-indexed, 1 is the first column)
-- <span style="color: red;">*</span> **Column Index of MFI (integer)**
+- <span style="color: red;">*</span>**Column Index of MFI (integer)**
     - Number of the column containing the MFI signal in the input PBM file. (1-indexed, 1 is the first column)
-- <span style="color: red;">*</span> **Sequence (string)**
+- <span style="color: red;">*</span>**Sequence (string)**
     - DNA sequence to scan for k-mers
 - **Zoom Window (dash-separated string)**
     - `Default = None`
