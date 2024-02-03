@@ -61,7 +61,14 @@ The raw PBM dataset for a transcription factor is downloaded from uniPROBE. We i
         - `Median:` the median fluorescence intensity of the k-mer
         - `Z-score:` the z-score of the k-mer 
 
-   <img src="./01-input.png"/> 
+```
+8-mer        8-mer        E-score     Median      Z-score
+AAAAAAAA     TTTTTTTT     0.29130     2871.60     3.5965
+AAAAAAAC     TTTTTTTG     0.10748     2086.00     0.3958
+AAAAAAAG     TTTTTTTC     0.23656     2539.91     2.3673
+AAAAAAAT     TTTTTTTA     0.21760     2434.82     1.9442
+AAAAAACA     TTTTTTGT     0.19839     2407.46     1.8310
+```
        
 ## Output Files
 
@@ -78,3 +85,4 @@ Example input data is available on github at [https://github.com/genepattern/tfs
 ## Version Comments
 
 - **1.0.0** (2023-11-28): Initial draft of document scaffold.
+- **1.0.1** (2024-02-02): Draft completed.
