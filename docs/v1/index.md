@@ -17,7 +17,7 @@
 
 ## Methodology
 
-The raw PBM dataset for a transcription factor is downloaded from uniPROBE. We iterate across every k-mer in the given sequence and obtain its MFI from the PBM dataset. The MFI for each k-mer is plotted on a graph at the first nucleotide of the k-mer. 
+The raw PBM dataset for a transcription factor is downloaded from [uniPROBE](http://the_brain.bwh.harvard.edu/uniprobe/). We iterate across every k-mer in the given sequence and obtain its MFI from the PBM dataset. The MFI for each k-mer is plotted on a graph at the first nucleotide of the k-mer. 
 
 ## Parameters
 
