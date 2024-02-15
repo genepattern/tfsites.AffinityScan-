@@ -4,20 +4,21 @@
         "description": "",
         "hidden": false,
         "parameters": [
-            "pbm.data",
-            "out.filename",
-            "header.sequence.present",
-	    "column.forward",
-            "column.MFI",
-	    "sequence"
+            "raw.PBM.input",
+	    "line.graph.of.MFI.across.a.sequence"
         ]
     },
 {
-        "name": "Plotting Parameters",
+        "name": "Other Parameters",
         "description": "",
         "hidden": false,
         "parameters": [
-            "zoom",
+            "header.present",
+            "column.index.of.DNA.k-mers",
+            "column.index.of.MFI",
+            "sequence",
+            "zoom.window",
+            "fill.color",
             "plot.resolution",
         ]
     }
