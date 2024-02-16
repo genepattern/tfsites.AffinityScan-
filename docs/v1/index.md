@@ -45,7 +45,7 @@ The raw PBM dataset for a transcription factor is downloaded from [uniPROBE](htt
     - Given a start position and an end position, zoom into a portion of the sequence. The numbers in the range are inclusive. For example, the first 200 nucleotides of the sequence would be specified as: 1-200.
 - **Fill Color (string)**
     - `Default = None`
-    - Select the color to fill the area under the line graph, otherwise it will not be filled. Specified by the name of the color (ex: `red`)
+    - Select the color to fill the area under the line graph, otherwise it will not be filled. Specified using the name of the color (ex: `red`)
 - **Plot Resolution (integer)**
     - `Default = 200`
     - Resolution of the plot, in dots (pixels) per inch.
