@@ -3,7 +3,7 @@
 JVMLevel=
 LSID=
 author=Joe Solvason (solvason@eng.ucsd.edu)
-commandLine=python /build/tfsites-webportal/07-affinityScan/07-affinityScan.py  -r <raw.PBM.data> -g <line.graph.of.MFI.across.DNA.sequence> -p <header.present> -f <column.of.PBM.k-mers> -m <column.of.PBM.MFI> -s <DNA.sequence.to.annotate> -r <plot.resolution> -z <region.of.DNA.to.visualize>  <fill.color>       
+commandLine=python /build/tfsites-webportal/07-affinityScan/07-affinityScan.py  -r <raw.PBM.data> -g <line.graph.of.MFI.across.DNA.sequence> -p <header.present> -k <column.of.PBM.k-mers> -m <column.of.PBM.MFI> -s <DNA.sequence.to.annotate> -r <plot.resolution> -v <region.of.DNA.to.visualize>  <fill.color>       
 cpuType=any
 description=Reports the median fluorescence intensity (MFI) from a raw PBM dataset of every possible k-mer in a sequence on a line graph. This shows the binding preferences for a transcription factor across a given sequence.
 documentationUrl=https://genepattern.github.io/tfsites.AffinityScan/v1/
