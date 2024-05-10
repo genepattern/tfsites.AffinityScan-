@@ -25,30 +25,33 @@ The raw PBM dataset for a transcription factor is downloaded from [uniPROBE](htt
 
 ### Inputs and Outputs: 
 
-- <span style="color: red;">*</span> **Raw PBM Input (.txt)**
+- <span style="color: red;">*</span> **raw PBM data (.txt)**
     - Input file containing the raw PBM dataset for the first transcription factor of interest obtained from uniPROBE. 
-- <span style="color: red;">*</span> **Line Graph of MFI Across a Sequence (.png)**
+- <span style="color: red;">*</span> **line graph of MFI across DNA sequence output filename (.png)**
     -  Name of the output file containing the line graph of the MFI signal of k-mers across a sequence. 
  
 ### Other Parameters:
 
 - <span style="color: red;">*</span>**Header Present (boolean)**
     - If `True`, a header exists in the input PBM data file. If `False`, no header exists.
-- <span style="color: red;">*</span>**Column Index of DNA K-mers (integer)**
+- <span style="color: red;">*</span>**column index of DNA k-mers (integer)**
     - Number of the column containing the forward DNA sequence in the input PBM file. (1-indexed, 1 is the first column)
-- <span style="color: red;">*</span>**Column Index of MFI (integer)**
+- <span style="color: red;">*</span>**column index of MFI (integer)**
     - Number of the column containing the MFI signal in the input PBM file. (1-indexed, 1 is the first column)
-- <span style="color: red;">*</span>**Sequence (string)**
+- <span style="color: red;">*</span>**DNA sequence to analyze (string)**
     - DNA sequence to scan for k-mers
-- **Zoom Window (dash-separated string)**
-    - `Default = None`
-    - Given a start position and an end position, zoom into a portion of the sequence. The numbers in the range are inclusive. For example, the first 200 nucleotides of the sequence would be specified as: 1-200.
-- **Fill Color (string)**
+- **fill color (string)**
     - `Default = None`
     - Select the color to fill the area under the line graph, otherwise it will not be filled. Specified using the name of the color (ex: `red`)
-- **Plot Resolution (integer)**
+- **plot resolution (integer)**
     - `Default = 200`
     - Resolution of the plot, in dots (pixels) per inch.
+- **plot dimensions (integer)**
+    - `Default = None`
+    - Resolution of the plot, in dots (pixels) per inch.
+- **Region of DNA to visualize (dash-separated string)**
+    - `Default = None`
+    - Given a start position and an end position, zoom into a portion of the sequence. The numbers in the range are inclusive. For example, the first 200 nucleotides of the sequence would be specified as: 1-200.
 
 
 ## Input Files
