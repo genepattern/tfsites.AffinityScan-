@@ -5,7 +5,7 @@
         "hidden": false,
         "parameters": [
             "raw.PBM.data",
-	    "line.graph.of.MFI.across.DNA.sequence"
+	    "line.graph.of.MFI.across.DNA.sequence.output.filename"
         ]
     },
 {
@@ -14,12 +14,13 @@
         "hidden": false,
         "parameters": [
             "header.present",
-            "column.of.PBM.k-mers",
-            "column.of.PBM.MFI",
-            "DNA.sequence.to.annotate",
-            "region.of.DNA.to.visualize",
+            "column.index.of.DNA.k-mers",
+            "column.index.of.MFI",
+            "DNA.sequence.to.analyze",
             "fill.color",
+            "plot.dimensions",
             "plot.resolution",
+            "region.of.DNA.to.visualize",
         ]
     }
 
