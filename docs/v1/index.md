@@ -49,7 +49,7 @@ The raw PBM dataset for a transcription factor is downloaded from [uniPROBE](htt
 - **plot resolution (integer)**
     - `Default = 200`
     - Resolution of the plot, in dots (pixels) per inch.
-- **region of DNA to visualize (dash-separated string)**
+- **zoom range (dash-separated string)**
     - `Default = None`
     - Given a start position and an end position, zoom into a portion of the sequence. The numbers in the range are inclusive and 0-indexed. For example, the first 200 nucleotides of the sequence would be specified as: 0-199.
 
