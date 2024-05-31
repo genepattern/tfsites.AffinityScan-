@@ -43,26 +43,26 @@ The raw PBM dataset for a transcription factor is downloaded from [uniPROBE](htt
 - **fill color (string)**
     - `Default = None`
     - Select the color to fill the area under the line graph, otherwise it will not be filled. Specified using the name of the color (ex: `red`)
+- **plot dimensions (integer)**
+    - `Default = None`
+    - Height and width of the image in inches, seperated by a comma.
 - **plot resolution (integer)**
     - `Default = 200`
     - Resolution of the plot, in dots (pixels) per inch.
-- **plot dimensions (integer)**
+- **region of DNA to visualize (dash-separated string)**
     - `Default = None`
-    - Resolution of the plot, in dots (pixels) per inch.
-- **Region of DNA to visualize (dash-separated string)**
-    - `Default = None`
-    - Given a start position and an end position, zoom into a portion of the sequence. The numbers in the range are inclusive. For example, the first 200 nucleotides of the sequence would be specified as: 1-200.
+    - Given a start position and an end position, zoom into a portion of the sequence. The numbers in the range are inclusive and 0-indexed. For example, the first 200 nucleotides of the sequence would be specified as: 0-199.
 
 
 ## Input Files
 
 1.  Raw PBM Input (.tsv)
-    - Columns
-        - `8-mer:` every possible forward k-mer sequence with length k
-        - `8-mer:` the reverse complement of the forward k-mer
-        - `E-score:` the enrichment score of the k-mer
-        - `Median:` the median fluorescence intensity of the k-mer
-        - `Z-score:` the z-score of the k-mer 
+- Columns
+    - `8-mer:` every possible forward k-mer sequence with length k
+    - `8-mer:` the reverse complement of the forward k-mer
+    - `E-score:` the enrichment score of the k-mer
+    - `Median:` the median fluorescence intensity of the k-mer
+    - `Z-score:` the z-score of the k-mer 
 
 ```
 8-mer        8-mer        E-score     Median      Z-score
@@ -77,7 +77,7 @@ AAAAAACA     TTTTTTGT     0.19839     2407.46     1.8310
 
 1. Line Graph of MFI Across a Sequence (.png)
 
-   <img src="./03-output_zrs-enhancer-signal.png"/> 
+<img src="./03-output_zrs-enhancer-signal.png"/> 
     
   
 ## Example Data
