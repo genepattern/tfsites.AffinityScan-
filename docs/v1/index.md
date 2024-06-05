@@ -13,7 +13,7 @@
 
 ## Introduction
 
-`affinityScan` reports the median fluorescence intensity (MFI) from a raw PBM dataset of every possible k-mer in a sequence on a line graph. This shows the binding preferences for a transcription factor across a given sequence. 
+Using PBM data, `AffinityScan` obtains the median fluorescence intensity (MFI) of every possible k-mer that exists in a given sequence and reports it on a line graph. This analysis shows the binding preferences for a transcription factor across the sequence. 
 
 ## Methodology
 
@@ -26,23 +26,25 @@ The raw PBM dataset for a transcription factor is downloaded from [uniPROBE](htt
 ### Inputs and Outputs: 
 
 - <span style="color: red;">*</span> **raw PBM data (.txt)**
-    - Input file containing the raw PBM dataset for the first transcription factor of interest obtained from uniPROBE. 
+    - File containing the raw PBM dataset for the transcription factor of interest obtained from uniPROBE. 
 - <span style="color: red;">*</span> **line graph of MFI across DNA sequence output filename (.png)**
     -  Name of the output file containing the line graph of the MFI signal of k-mers across a sequence. 
  
-### Other Parameters:
+### Analysis Parameters:
 
-- <span style="color: red;">*</span>**Header Present (boolean)**
+- <span style="color: red;">*</span>**DNA sequence to analyze (string)**
+    - DNA sequence to scan for k-mers
+- <span style="color: red;">*</span>**header present (boolean)**
     - If `True`, a header exists in the input PBM data file. If `False`, no header exists.
 - <span style="color: red;">*</span>**column index of DNA k-mers (integer)**
     - Number of the column containing the forward DNA sequence in the input PBM file. (1-indexed, 1 is the first column)
 - <span style="color: red;">*</span>**column index of MFI (integer)**
     - Number of the column containing the MFI signal in the input PBM file. (1-indexed, 1 is the first column)
-- <span style="color: red;">*</span>**DNA sequence to analyze (string)**
-    - DNA sequence to scan for k-mers
+ 
+### Plotting Parameters:
 - **fill color (string)**
     - `Default = None`
-    - Select the color to fill the area under the line graph, otherwise it will not be filled. Specified using the name of the color (ex: `red`)
+    - Select the color to fill the area under the line graph, otherwise it will not be filled. The color must be in the list of `matplotlib` named colors, which can be found [here](https://matplotlib.org/stable/gallery/color/named_colors.html).
 - **plot dimensions (integer)**
     - `Default = None`
     - Height and width of the image in inches, seperated by a comma.
@@ -56,7 +58,7 @@ The raw PBM dataset for a transcription factor is downloaded from [uniPROBE](htt
 
 ## Input Files
 
-1.  Raw PBM Input (.tsv)
+1.  raw PBM data (.tsv)
 - Columns
     - `8-mer:` every possible forward k-mer sequence with length k
     - `8-mer:` the reverse complement of the forward k-mer
@@ -75,7 +77,7 @@ AAAAAACA     TTTTTTGT     0.19839     2407.46     1.8310
        
 ## Output Files
 
-1. Line Graph of MFI Across a Sequence (.png)
+1. line graph of MFI across DNA sequence (.png)
 
 <img src="./03-output_zrs-enhancer-signal.png"/> 
     
