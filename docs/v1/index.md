@@ -79,7 +79,7 @@ AAAAAACA     TTTTTTGT     0.19839     2407.46     1.8310
 
 1. bar graph of MFI across DNA sequence (.png)
 
-<img src="./03-output_zrs-enhancer-signal.png"/> 
+<img src="./output_zrs-enhancer-signal.png"/> 
     
   
 ## Example Data
