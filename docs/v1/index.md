@@ -45,9 +45,9 @@ The raw PBM dataset for a transcription factor is downloaded from [uniPROBE](htt
 - **fill color (string)**
     - `Default = None`
     - Select the color to fill the area under the line graph, otherwise it will not be filled. The color must be in the list of `matplotlib` named colors, which can be found [here](https://matplotlib.org/stable/gallery/color/named_colors.html).
-- **plot dimensions (integer)**
+- **plot dimensions (comma-separated integers)**
     - `Default = None`
-    - Height and width of the image in inches, seperated by a comma.
+    - Height and width of the image in inches.
 - **plot resolution (integer)**
     - `Default = 200`
     - Resolution of the plot, in dots (pixels) per inch.
