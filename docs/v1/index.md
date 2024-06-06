@@ -13,11 +13,11 @@
 
 ## Introduction
 
-Using PBM data, `AffinityScan` obtains the median fluorescence intensity (MFI) of every possible k-mer that exists in a given sequence and reports it on a line graph. This analysis shows the binding preferences for a transcription factor across the sequence. 
+Using PBM data, `AffinityScan` obtains the median fluorescence intensity (MFI) of every possible k-mer that exists in a given sequence and reports it as a bar graph. This analysis shows the binding preferences for a transcription factor across the sequence. 
 
 ## Methodology
 
-The raw PBM dataset for a transcription factor is downloaded from [uniPROBE](http://the_brain.bwh.harvard.edu/uniprobe/). We iterate across every k-mer in the given sequence and obtain its MFI from the PBM dataset. The MFI for each k-mer is plotted on a graph at the first nucleotide of the k-mer. 
+The raw PBM dataset for a transcription factor is downloaded from [uniPROBE](http://the_brain.bwh.harvard.edu/uniprobe/). We iterate across every k-mer in the given sequence and obtain its MFI from the PBM dataset. The MFI for each k-mer is plotted as a bar on the graph, at the first nucleotide of the k-mer. The intensity of each bar's color is proportional to the value of the MFI compared to the median of all MFI values. The larger the MFI is from the median, the darker the color of the bar. Any bar that represents an MFI lower than the median is capped at a bottom threshold. 
 
 ## Parameters
 
@@ -27,8 +27,8 @@ The raw PBM dataset for a transcription factor is downloaded from [uniPROBE](htt
 
 - <span style="color: red;">*</span> **raw PBM data (.txt)**
     - File containing the raw PBM dataset for the transcription factor of interest obtained from uniPROBE. 
-- <span style="color: red;">*</span> **line graph of MFI across DNA sequence output filename (.png)**
-    -  Name of the output file containing the line graph of the MFI signal of k-mers across a sequence. 
+- <span style="color: red;">*</span> **bar graph of MFI across DNA sequence output filename (.png)**
+    -  Name of the output file containing the bar graph of the MFI signal of k-mers across a sequence. 
  
 ### Analysis Parameters:
 
@@ -42,9 +42,9 @@ The raw PBM dataset for a transcription factor is downloaded from [uniPROBE](htt
     - Number of the column containing the MFI signal in the input PBM file. (1-indexed, 1 is the first column)
  
 ### Plotting Parameters:
-- **fill color (string)**
-    - `Default = None`
-    - Select the color to fill the area under the line graph, otherwise it will not be filled. The color must be in the list of `matplotlib` named colors, which can be found [here](https://matplotlib.org/stable/gallery/color/named_colors.html).
+- **color of bar graph (string)**
+    - `Default = gray`
+    - Select the color of the bar graph. The color must be in the list of `matplotlib` named colors, which can be found [here](https://matplotlib.org/stable/gallery/color/named_colors.html).
 - **plot dimensions (comma-separated integers)**
     - `Default = None`
     - Height and width of the image in inches.
@@ -77,7 +77,7 @@ AAAAAACA     TTTTTTGT     0.19839     2407.46     1.8310
        
 ## Output Files
 
-1. line graph of MFI across DNA sequence (.png)
+1. bar graph of MFI across DNA sequence (.png)
 
 <img src="./03-output_zrs-enhancer-signal.png"/> 
     
