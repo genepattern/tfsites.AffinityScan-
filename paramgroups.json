@@ -5,22 +5,30 @@
         "hidden": false,
         "parameters": [
             "raw.PBM.data",
-	    "line.graph.of.MFI.across.DNA.sequence.output.filename"
+	    "bar.graph.of.MFI.across.DNA.sequence.output.filename"
         ]
     },
 {
-        "name": "Other Parameters",
+        "name": "Analysis Parameters",
         "description": "",
         "hidden": false,
         "parameters": [
+            "DNA.sequence.to.analyze",
             "header.present",
             "column.index.of.DNA.k-mers",
             "column.index.of.MFI",
-            "DNA.sequence.to.analyze",
-            "fill.color",
+        ]
+    },
+
+{
+        "name": "Plotting Parameters",
+        "description": "",
+        "hidden": false,
+        "parameters": [
+            "color.of.bar.graph",
             "plot.dimensions",
             "plot.resolution",
-            "region.of.DNA.to.visualize",
+            "zoom.range",
         ]
     }
 
