@@ -161,6 +161,6 @@ privacy=public
 quality=development
 src.repo=https://github.com/genepattern/tfsites.AffinityScan
 taskDoc=
-taskType=Transciption factor analysis
+taskType=Transcription factor analysis
 userid=ted
 version=Draft initial release
